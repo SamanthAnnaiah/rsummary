@@ -1,0 +1,204 @@
+:root {
+  --main-bg-color: #f0f0f0;
+  --main-text-color: #f0f0f0;
+  --main-text-color-1: #333;
+  --main-btn-color: #f0f0f0;
+  --main-btn-text-color: #333;
+  --main-btn-hover-color: #333;
+  --main-btn-hover-text-color: #f0f0f0;
+  --main-btn-border-color: #333;
+  --main-btn-border-hover-color: #f0f0f0;
+  --main-btn-border-radius: 12px;
+  --main-btn-padding: 10px 20px;
+  --main-btn-font-size: 16px;
+  --main-btn-font-weight: 600;
+  --main-btn-letter-spacing: 1px;
+  --main-btn-text-transform: uppercase;
+  --main-btn-transition: all 0.3s ease;
+  --light-slate-blue: hsl(252, 100%, 67%);
+  --light-royal-blue: hsl(241, 81%, 54%);
+  --light-red: hsl(0, 100%, 67%);
+  --light-red-text: hsla(0, 100%, 67%, 0.208);
+  --orangey-yellow: hsl(39, 100%, 56%);
+  --orangey-yellow-text: hsla(39, 100%, 56%, 0.211);
+  --green-teal: hsl(166, 100%, 37%);
+  --green-teal-text: hsla(166, 100%, 37%, 0.211);
+  --cobalt-blue: hsl(234, 85%, 45%);
+  --cobalt-blue-text: hsla(234, 85%, 45%, 0.222);
+}
+
+@font-face {
+  font-family: "hgbold";
+  src: url("/fonts/HankenGrotesk-Bold.ttf");
+}
+
+@font-face {
+  font-family: "hgextrabold";
+  src: url("/fonts/HankenGrotesk-ExtraBold.ttf");
+}
+
+@font-face {
+  font-family: "hgmedium";
+  src: url("/fonts/HankenGrotesk-Medium.ttf");
+}
+
+body {
+  color: var(--main-text-color);
+}
+
+.main_container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 400px;
+  width: 600px;
+  margin: auto;
+  margin-top: 90px;
+  box-shadow: 8px 8px 26px -8px rgba(216, 212, 212, 0.75);
+  border-radius: 12px;
+  gap: 20px;
+  font-family: "hgbold";
+}
+
+.sub_result {
+  border: 0px solid #0e0101;
+  border-radius: 20px;
+  align-self: center;
+  flex: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: top;
+  gap: 30px;
+  background: var(--light-royal-blue);
+  background: linear-gradient(
+    20deg,
+    var(--light-slate-blue) 30%,
+    var(--light-royal-blue) 100%
+  );
+  font-family: "hgbold";
+}
+
+.sub_summary {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: top;
+  flex: 1;
+  height: 100%;
+  color: var(--main-text-color-1);
+}
+
+.sub_summary_item {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-around;
+  gap: 90px;
+  border-radius: 6px;
+  width: 86%;
+  overflow: auto;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+  transition: width 0.3s ease, font-size 0.3s ease;
+}
+.sub_summary_item:hover {
+  width: 92%;
+  font-size: 1.12em;
+}
+
+.cbutton {
+  width: 50%;
+  margin: auto;
+  color: white;
+  background-color: hsl(224, 30%, 27%);
+  border-radius: 18px;
+  padding: 10px;
+  transition: transform 0.3s ease;
+}
+.cbutton:hover {
+  background-color: hsl(176, 70%, 50%);
+  color: hsl(224, 80%, 53%);
+  cursor: pointer;
+  transform: translateX(-3px);
+}
+
+.ssi1 {
+  color: var(--light-red);
+}
+.ssi2 {
+  color: var(--orangey-yellow);
+}
+.ssi3 {
+  color: var(--green-teal);
+}
+.ssi4 {
+  color: var(--cobalt-blue);
+}
+
+.ssib1 {
+  background-color: var(--light-red-text);
+}
+.ssib2 {
+  background-color: var(--orangey-yellow-text);
+}
+.ssib3 {
+  background-color: var(--green-teal-text);
+}
+.ssib4 {
+  background-color: var(--cobalt-blue-text);
+}
+
+.sub_result,
+.sub_summary div,
+.talign_center {
+  text-align: center;
+}
+
+.talign_right {
+  text-align: right;
+}
+.mtop_1 {
+  margin-top: 20px;
+}
+.mtop_2 {
+  margin-top: 40px;
+}
+.fs_1 {
+  font-size: 3.5rem;
+}
+.fs_2 {
+  font-size: 1.3rem;
+}
+.pding_1 {
+  padding: 20px;
+}
+.pding_1 {
+  padding: 10px;
+}
+.width_1 {
+  width: 55%;
+}
+.bold1 {
+  font-weight: 900;
+}
+.bold2 {
+  font-weight: 100;
+  opacity: 0.6;
+}
+
+.hgbold {
+  font-family: "hgbold";
+}
+.hgextrabold {
+  font-family: "hgextrabold";
+}
+.hgmedium {
+  font-family: "hgmedium";
+}
+
+.circle {
+  border-radius: 180px;
+  box-shadow: inset 0px 18px 58px 15px hsla(241, 91%, 38%, 0.707);
+}
